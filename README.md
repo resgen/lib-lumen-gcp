@@ -7,6 +7,14 @@ GCP Service Account authentication provider powered by ENV vars. Base64 decodes 
 - Lumen 5.8+
 - ENV var APP_GCP_SERVICE_ACCOUNT with base64 encoded GCP Service Account JSON
 
+## Install
+
+With composer: 
+
+```bash
+composer require resgen/lumen-gcp:1.0.*
+```
+
 ## Why base64 Json?
 
 Env vars with JSON values are more system universal when they are base64 encoded values. Some systems work fine with json values in ENV vars, some do not. 

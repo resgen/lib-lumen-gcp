@@ -1,5 +1,5 @@
 {
-    "name": "resgen/lumen-proc",
+    "name": "resgen/lumen-gcp",
     "type": "library",
     "license": "GPL-3.0+",
     "authors": [{
