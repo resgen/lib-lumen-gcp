@@ -1,0 +1,16 @@
+sudo: true  # Required to install packages
+
+services:
+  - docker
+
+language: php
+php:
+  - '7.3'
+  - '7.4'
+
+install:
+  - composer self-update
+  - composer up
+
+script:
+  - ./vendor/bin/phpunit -c phpunit.xml
