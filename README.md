@@ -11,6 +11,10 @@ GCP Service Account authentication provider powered by ENV vars. Base64 decodes 
 
 Env vars with JSON values are more system universal when they are base64 encoded values. Some systems work fine with json values in ENV vars, some do not. 
 
+## Kubernetes
+
+If you are using kubernetes secrets, be sure to double base64 encode the value. This will ensure that the env var will still be base64 encoded inside your pod's ENV.
+
 ## Basic Example
 
 Env:
